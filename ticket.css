@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+    font-size: larger;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+p {
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+   
+}
+
+.message {
+    font-weight:lighter;
+}
+
+#back {
+    font-size: larger;
+    color: Black;
+}

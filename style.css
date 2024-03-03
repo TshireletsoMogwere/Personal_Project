@@ -31,7 +31,55 @@ h1 {
     width: 300px; /* Adjust width as needed */
 }
 
-#Submit {
+.options-list .option a {
+    color: white;
+    text-decoration: none; /* Optional: Removes underline from links */
+}
+
+ul {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    display:grid;
+    gap: 10px;
+}
+
+ul li {
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+ul li:hover {
+    color: blush;
+    cursor: pointer;
+    animation: reflection 0.5s infinite alternate;
+    -webkit-animation: reflection 0.5s infinite alternate;
+}
+
+/* Style for the tick */
+.tick {
+    visibility: hidden;
+    color: rgb(233, 242, 233);
+}
+.option.selected .tick {
+    visibility: visible;
+}
+
+
+
+
+@keyframes  reflection {
+    100% {
+        text-shadow: 0 0 10px rgb(241, 236, 236);
+    }
+}
+
+
+#submitbtn {
     font-weight: 800;
     text-align: center;
     border-radius: 10px;
@@ -45,6 +93,47 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-#submit:hover {
-    background-color: #ccc;
+#submitbtn:hover {
+    background-color: #9ff4c8;
 }
+
+
+ /* Responsive list styling */
+ul {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    margin-bottom: 10px;
+}
+
+/* Styling for the options */
+.ul {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+ul li:hover {
+    color: blush;
+    cursor: pointer;
+    animation: reflection 0.5s infinite alternate;
+    -webkit-animation: reflection 0.5s infinite alternate;
+}
+
+
+/* Style for the tick */
+.tick {
+    visibility: hidden;
+    color: rgb(220, 241, 220);
+}
+.option.selected .tick {
+    visibility: visible;
+}
+
