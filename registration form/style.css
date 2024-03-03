@@ -1,0 +1,50 @@
+body {
+    background-color: rgba(0, 128, 0, 0.74);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+
+.Fill-in-form {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.queue {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#name, #surname, #ID, #Enquire {
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    margin: 10px;
+    padding: 0 10px;
+    width: 300px; /* Adjust width as needed */
+}
+
+#Submit {
+    font-weight: 800;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #ccc;
+}
