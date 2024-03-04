@@ -1,37 +1,37 @@
-<!DOCTYPE html> <!-- Declaration of HTML5 document type -->
-<html lang="en"> <!-- Start of HTML document with language set to English -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Viewport configuration for responsive design -->
-    <title>TicketKioskbyTshireletso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Number Ticket Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Bafokeng Health Centre</h1> <!-- Main heading of the webpage -->
 
     <section class="Fill-in-form"> <!-- Section for the fill-in form -->
         <h2>Queue Registration</h2> <!-- Subheading for the form -->
-        <form class="redirect-form" id="registrationform" action="ticket.html" method="get"> <!-- Form for queue registration with action attribute specifying the destination URL -->
+        <form class="redirect-form" id="registrationform">
             <input id="name" name="name" placeholder="Your Name" required>
             <input id="surname" name="surname" placeholder="Your Surname" required>
             <input id="ID" name="ID" placeholder="Your ID" required>
-            <h1>Enquiry:</h1>
-   
+            <h1>Enquiry</h1>
+            <p>Choose one option below:</p>
 
             <ul class="options-list">
                 <li class="option" data-option="Consult"><a href="#">Consult<span class="tick"> &#10004;</span></a></li>
-                <li class="option" data-option="Consult"><a href="#">Check up<span class="tick"> &#10004;</span></a></li>
-                <li class="option" data-option="Consult"><a href="#">Treatment<span class="tick"> &#10004;</span></a></li>
-                <li class="option" data-option="Consult"><a href="#">Family Planning<span class="tick"> &#10004;</span></a></li>
+                <li class="option" data-option="Checkup"><a href="#">Check up<span class="tick"> &#10004;</span></a></li>
+                <li class="option" data-option="Treatment"><a href="#">Treatment<span class="tick"> &#10004;</span></a></li>
+                <li class="option" data-option="Family Planning"><a href="#">Family Planning<span class="tick"> &#10004;</span></a></li>
             </ul>
-    
-
-            <button id="submitbtn" type="submit">SUBMIT</button>
         </form>
+
+        <button onclick="goToPage2()">SUBMIT</button>
     </section>
- 
-    <a href="ticket.html" id="ticket"></a> <!-- Anchor tag linking to "ticket.html" page with an ID of "ticket" -->
-    <a href="index.html"></a> <!-- Anchor tag linking to "index.html" page -->
-    <script src="index.js"></script> <!-- Link to an external JavaScript file -->
+
+   <script src="index.js"></script>
+   
+    
 </body>
 </html>

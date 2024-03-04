@@ -9,6 +9,12 @@ h1 {
     font-size: xx-large;
 }
 
+p {
+    color: white;
+    font-size: larger;
+    font-weight: 800;
+}
+
 .Fill-in-form {
     text-align: center;
     color: white;
@@ -40,8 +46,8 @@ ul {
     color: white;
     list-style-type: none;
     padding: 0;
-    display:grid;
     gap: 10px;
+   
 }
 
 ul li {
@@ -69,17 +75,7 @@ ul li:hover {
     visibility: visible;
 }
 
-
-
-
-@keyframes  reflection {
-    100% {
-        text-shadow: 0 0 10px rgb(241, 236, 236);
-    }
-}
-
-
-#submitbtn {
+button {
     font-weight: 800;
     text-align: center;
     border-radius: 10px;
@@ -93,7 +89,58 @@ ul li:hover {
     transition: background-color 0.3s ease;
 }
 
-#submitbtn:hover {
+button:hover {
+    background-color: #9ff4c8;
+}
+
+.page2 {
+    background: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.h1 {
+    color:black;
+    text-align: center;
+}
+
+.p1 {
+    color: black;
+    font-style: italic;
+}
+
+.ticket {
+    color: white;
+    font-size: x-large;
+    /* Add more styles as needed */
+}
+
+
+
+
+@keyframes  reflection {
+    100% {
+        text-shadow: 0 0 10px rgb(241, 236, 236);
+    }
+}
+
+
+button {
+    font-weight: 800;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
     background-color: #9ff4c8;
 }
 
@@ -136,4 +183,3 @@ ul li:hover {
 .option.selected .tick {
     visibility: visible;
 }
-
